@@ -1,0 +1,71 @@
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+}
+body {
+  margin: 0;
+}
+/* Header */
+nav {
+  background-color: white;
+  color: #3d3d3d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+nav span {
+  font-size: 2rem;
+  margin-left: -1rem;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav img {
+  height: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+ul li {
+  display:inline;
+  padding: 0rem 1rem;
+}
+ul {
+  margin-right: 1.5rem;
+}
+/* Banner section */
+.gray-back {
+  background-color: lightgray;
+}
+.banner {
+  display: inline-flex;
+}
+.banner img {
+  margin: 2rem 1.5rem;
+}
+.banner-content {
+  background-color: lightgray;
+  color: black;
+  width: 25rem;
+  padding: 2rem 3rem;
+  margin: 8rem 1.5rem;
+}
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+.banner-content h2 {
+  font-weight: bold;
+  color: #3d3d3d;
+}
+.button {
+  padding: 0.5rem;
+  background-color: #3d3d3d;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+/* Doesn't hurt to keep practicing*/
