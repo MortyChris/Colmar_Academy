@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
-
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
 
@@ -17,17 +17,17 @@
       </div>
       <div class="menu">
         <ul>
-          <li>On campus</li>
-          <li>Online</li>
-          <li>or companies</li>
-          <li>Sign in</li>
+          <li><a href="#">On campus</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">or companies</a></li>
+          <li><a href="#" class="button">Sign in</a></li>
         </ul>
         <nav class ="mobile">
         <ul>
-          <li><img src="./resources/images/ic-logo.svg" ></li>
-          <li><img src="./resources/images/ic-on-campus.svg" ></li>
-          <li><img src="./resources/images/ic-online.svg" ></li>
-          <li><img src="./resources/images/ic-login.svg" ></li>
+          <li><a href="#"><img src="./resources/images/ic-logo.svg" ></a></li>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg" ></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg" ></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg" ></a></li>
         </ul>
       </nav>
       </div>
@@ -40,9 +40,8 @@
         <div class="banner-content">
           <h1>Learn something new everyday </h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2><br />
-          <div class ="button">Start here</div>
+          <button type="button" onclick="alert('I am a robot!')"><span id = "start">Start Here</span></button>
         </div>
-
     </div>
     </div>
     </header>
@@ -93,34 +92,34 @@
         <div class ="first-row">
           <div class ="software">
             <img src ="resources/images/course-software.jpg"/>
-            <h2>Software engineering</h2>
+            <h2><a href="#" class="mobile-button">Software engineering</a></h2>
             <h3>COURSES <br />Web Development, Mobile Development, iOT, APIs</h3>
           </div>
           <div class ="computer-art">
             <img src ="resources/images/course-computer-art.jpg"/>
-            <h2>Computer art</h2>
+            <h2><a href="#" class="mobile-button">Computer art</a></h2>
             <h3>COURSES <br />Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h3>
           </div>
           <div class ="design">
             <img src ="resources/images/course-design.jpg"/>
-            <h2>Design</h2>
+            <h2><a href="#" class="mobile-button">Design</a></h2>
             <h3>COURSES <br />User Experience Design. User Research, Visual Design</h3>
           </div>
       </div>
       <div class ="second-row">
         <div class ="data">
             <img src ="resources/images/course-data.jpg"/>
-          <h2>Data</h2>
+          <h2><a href="#" class="mobile-button">Data</a></h2>
           <h3>COURSES <br />Data Science, Big Data, SQL, Data Visualization</h3>
         </div>
         <div class ="business">
             <img src ="resources/images/course-business.jpg"/>
-          <h2>Business</h2>
+          <h2><a href="#" class="mobile-button">Business</a></h2>
           <h3>COURSES <br />Product Development, Business Development, Startup</h3>
         </div>
         <div class ="marketing">
             <img src ="resources/images/course-marketing.jpg"/>
-          <h2>Marketing</h2>
+          <h2><a href="#" class="mobile-button">Marketing</a></h2>
           <h3>COURSES <br />Analytics, Content Marketing, Mobile Marketing</h3>
         </div>
       </div>
@@ -157,13 +156,20 @@
     </div>
     <!-- Footer -->
     <footer>
-      <div class="footer">
-      <span> 2016 Colmar Academy. All rights reserved</span>
+        <div class ="copy"><span>2016 Colmar Academy. All rights reserved</span>
+          </div>
       <ul>
-        <li>Terms</li>
-        <li>Privacy</li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <!-- Social Media Icons -->
+       <div class="social">
+         <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+         <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-3x"></i></a>
+         <a href ="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+         <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a>
+       </div>
       </ul>
-    </div>
+
     </footer>
   </body>
 </html>
