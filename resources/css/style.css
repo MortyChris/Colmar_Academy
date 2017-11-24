@@ -13,7 +13,6 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
   height: 5rem;
 }
 nav span {
@@ -227,6 +226,9 @@ a {
   font-size: 2rem;
   margin-left: 2rem;
 }
+.first-row h2 a:hover {
+  color:#7D0CE8;
+}
 .first-row h3 {
   padding-left: 1rem;
   color: #3d3d3d;
@@ -260,6 +262,9 @@ a {
   color: #3d3d3d;
   font-size: 2rem;
   margin-left: 2rem;
+}
+.second-row h2 a:hover {
+  color:#7D0CE8;
 }
 .second-row h3 {
   padding-left: 1rem;
@@ -387,7 +392,7 @@ header .mobile  {
   display: none;
 }
 /* Mobile Phone Media Query*/
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 800px){
 /*menu*/
   .menu ul {
     display: none;
@@ -395,18 +400,32 @@ header .mobile  {
   .logo {
     display: none;
   }
-  header .mobile ul {
+  header .mobile {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 4rem;
+    margin-left: 1rem;
+    position: absolute;
+  }
+  header .mobile a {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  header .mobile {
-    display: block;
-    width: 100%;
-  }
-  header .mobile li {
+  header .mobile a {
     padding: 0;
+    margin: 0;
+  }
+  header .mobile img {
+    width: 35%;
   }
 /*main banner*/
 .banner1 {
@@ -572,8 +591,9 @@ header .mobile  {
   .first-row .mobile-button {
     background-color:lightgray;
     color:#3d3d3d;
-    margin-right:10px;
-    padding:10px 10px;
+    margin-left:.5rem;
+    padding:.5rem .5rem;
+    font-size: 1.9rem;
   }
   .second-row {
     display: flex;
@@ -614,8 +634,9 @@ header .mobile  {
 .second-row .mobile-button {
   background-color:lightgray;
   color:#3d3d3d;
-  margin-right:10px;
-  padding:10px 10px;
+  margin-left:.5rem;
+  padding:.5rem .5rem;
+  font-size: 1.9rem;
 }
 /*thesis*/
 .vcontent {
@@ -659,29 +680,4 @@ footer .copy {
   footer .social a {
     font-size: .5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
